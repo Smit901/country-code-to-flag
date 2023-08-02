@@ -3,7 +3,7 @@ function countryCodeToFlag(countryCode) {
     return 'Invalid country code';
   }
 
-  let url = `https://flagcdn.com/h40/${countryCode}.png`
+  let url = `https://flagcdn.com/h40/${countryCode.toLowerCase()}.png`
 
   return url;
 }
