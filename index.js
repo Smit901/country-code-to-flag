@@ -1,5 +1,3 @@
-const twemoji = require('twemoji');
-
 function countryCodeToFlag(countryCode) {
   if (!countryCode || countryCode.length !== 2) {
     return 'Invalid country code';
@@ -20,17 +18,7 @@ function countryCodeToFlag(countryCode) {
     }
   }
 
-  return (
-    <span
-      dangerouslySetInnerHTML={{
-        __html: twemoji.parse(flag, {
-          folder: 'svg',
-          ext: '.svg',
-        }),
-      }}
-    />
-  );
-;
+  return flag;
 }
 
 module.exports = countryCodeToFlag;
