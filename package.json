@@ -17,6 +17,7 @@
   "homepage": "https://github.com/Smit901/country-code-to-flag#readme",
   "description": "",
   "dependencies": {
+    "react": "^18.2.0",
     "twemoji": "^14.0.2"
   }
 }
